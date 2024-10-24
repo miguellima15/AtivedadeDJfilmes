@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>FEPI CineClub - Página Principal</title>
+</head>
+<body>
+    <h1>Filmes Populares</h1>
+    <div class="movie-list">
+        <div class="movie-item" data-id="1">
+            <img src="{% static 'img/ultimato.jpeg' %}" alt="Ultimato">
+            <h2>Ultimato</h2>
+        </div>
+        <div class="movie-item" data-id="2">
+            <img src="{% static 'img/Carros.jpeg' %}" alt="Carros">
+            <h2>Carros</h2>
+        </div>
+        <div class="movie-item" data-id="3">
+            <img src="{% static 'img/gigante.jpeg' %}" alt="Gigantes de Aço">
+            <h2>Gigantes de Aço</h2>
+        </div>
+    </div>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
